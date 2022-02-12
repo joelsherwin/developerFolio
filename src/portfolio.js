@@ -42,7 +42,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "2 years of experience in game design, specifically : ",
+  subTitle: "2+ years of experience in game design, specifically : ",
   skills: [
     emoji(
       "⚡ Wireframing & prototyping"
@@ -52,7 +52,7 @@ const skillsSection = {
     emoji("⚡ Storyboarding & conceptualization"),
     emoji("⚡ User experience and sound design"),
     emoji(
-      "⚡ Experienced in production and team management."
+      "⚡ Game production and team management."
     )
   ],
 
@@ -122,7 +122,7 @@ const workExperiences = {
       role: "Senior Game Designer",
       company: "Juego Studios",
       companylogo: require("./assets/images/juegoLogo.png"),
-      date: "June 2018 – Present",
+      date: "Jun 2019 – Nov 2020",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -133,7 +133,7 @@ const workExperiences = {
       role: "Game Designer",
       company: "Juego Studios",
       companylogo: require("./assets/images/juegoLogo.png"),
-      date: "May 2017 – May 2018",
+      date: "Jun 2018 – Jun 2019",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
@@ -157,8 +157,8 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Some of the stuff I've worked on",
-  subtitle: "",
+  title: "Past Projects",
+  subtitle: "Stuff I've Worked On",
   projects: [
     {
       image: require("./assets/images/game1.jpg"),
@@ -173,8 +173,8 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
+      image: require("./assets/images/game2.jpg"),
+      projectName: "Raids of Glory",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
@@ -184,8 +184,8 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
+      image: require("./assets/images/game3.jpg"),
+      projectName: "Medals of War",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
@@ -194,8 +194,8 @@ const bigProjects = {
         }
       ]
     },{
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
+      image: require("./assets/images/game4.jpg"),
+      projectName: "Coin Kings",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
@@ -205,8 +205,8 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
+      image: require("./assets/images/game5.jpg"),
+      projectName: "Tribal Ludo",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
@@ -225,9 +225,25 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Certifications 🏆 "),
   subtitle:
-    "Certifications",
+    "Qualifications and stuff",
 
   achievementsCards: [
+    {
+      title: "Bachelor's Degree in Engineering - Mechatronics",
+      subtitle:
+        "Mangalore Institute of Technology & Engineering",
+      image: require("./assets/images/mitelogo.png"),
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        },
+        {
+          name: "Award Letter",
+          url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        }
+      ]
+    },
     {
       title: "Lean Six Sigma Green Belt",
       subtitle:
