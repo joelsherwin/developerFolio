@@ -35,7 +35,7 @@ export default function Twitter() {
             <TwitterTimelineEmbed
               sourceType="profile"
               screenName={twitterDetails.userName}
-              options={{height: 400, width: {widthScreen}}}
+              options={{height: 500, width: {widthScreen}}}
               placeholder={renderLoader()}
               autoHeight={false}
               borderColor="#fff"

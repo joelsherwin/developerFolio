@@ -23,7 +23,7 @@ const greeting = {
     "💼 Actively looking for opportunities."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -31,7 +31,7 @@ const greeting = {
 
 const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/chrysostom-watson-631a55163/?originalSubdomain=jp",
-  gmail: "chriswatson@gmail.com",
+  gmail: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
   twitter: "https://twitter.com/elementart_",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
@@ -179,7 +179,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         }
       ]
     },
@@ -236,15 +236,11 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         },
         {
           name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         }
       ]
     }
