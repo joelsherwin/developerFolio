@@ -2,29 +2,30 @@ import React, {useState, useContext} from "react";
 import StyleContext from "../../contexts/StyleContext";
 import { useTranslation } from "react-i18next";
 
-import "./ToggleSwitch.scss";
+import "./LanguageSwitch.scss";
 
-const ToggleSwitch = () => {
-  const {isDark} = useContext(StyleContext);
-  const [isChecked, setChecked] = useState(isDark);
-  const styleContext = useContext(StyleContext);
+const LanguageSwitch = () => {
+
   const { i18n } = useTranslation();
 
 
   return (
+    <div className="languageSwitchContainer">
+
+    <div>English</div>
     <label className="switch">
       <input
         type="checkbox"
-        checked={isDark}
         onChange={(e) => {
-          styleContext.changeTheme();
-          setChecked(!isChecked);
-
-
+          if(i18n.language==="en") i18n.changeLanguage("ja")
+          else i18n.changeLanguage("en")
         }}
       />
       <span className="slider round"></span>
     </label>
+    <div>日本</div>
+
+    </div>
   );
 };
-export default ToggleSwitch;
+export default LanguageSwitch;

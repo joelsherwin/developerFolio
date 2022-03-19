@@ -17,15 +17,21 @@ import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
+import localestrings from "../assets/locale/localestrings";
 import "./Main.scss";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
+  const [locale, setLocale] = useLocalStorage("isJa", darkPref.matches);
 
   const changeTheme = () => {
     setIsDark(!isDark);
   };
+
+  const changeLocale=() => {
+    localestrings.setLanguage("ja"); 
+  }
 
   return (
     <div className={isDark ? "dark-mode" : null}>

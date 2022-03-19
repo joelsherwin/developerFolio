@@ -4,14 +4,17 @@ import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 import gamingPerson from "../../assets/lottie/gamingPerson";
+import LanguageSwitch from "../../components/LanguageSwitch/LanguageSwitch";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import { useTranslation } from "react-i18next";
 
 export default function Greeting() {
+  const { t } = useTranslation();
   const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
@@ -26,9 +29,10 @@ export default function Greeting() {
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
                 {" "}
-                {greeting.title}{" "}
+                {t("greeting")}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
+              <div> <LanguageSwitch/>  </div>
               <p
                 className={
                   isDark
@@ -36,7 +40,7 @@ export default function Greeting() {
                     : "greeting-text-p subTitle"
                 }
               >
-                {greeting.subTitle1}
+                {t("subtitle1")}
                 
               </p>
               <p
@@ -47,7 +51,7 @@ export default function Greeting() {
                 }
               >
                 
-                {greeting.subTitle2}
+                {t("subtitle2")}
               </p>
               <p
                 className={
@@ -57,9 +61,10 @@ export default function Greeting() {
                 }
               >
                 
-                {greeting.subTitle3}
+                {t("subtitle3")}
               </p>
               <SocialMedia />
+
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (

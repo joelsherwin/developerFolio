@@ -3,6 +3,8 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
+import  i18next  from "./assets/locale/i8n";
+
 
 // Summary And Greeting Section
 
@@ -12,7 +14,7 @@ const illustration = {
 
 const greeting = {
   username: "Chris Watson",
-  title: "Hi! I'm Chris",
+  title: i18next.t("greeting"),
   subTitle1: emoji(
     "🎮 Game designer with a professional and personal passion for all things gaming. "
   ) ,
@@ -45,10 +47,10 @@ const skillsSection = {
   subTitle: "2+ years of experience in game design, specifically : ",
   skills: [
     emoji(
-      "⚡ Wireframing & prototyping"
+      "⚡ Game design documentation"
     ),
-    emoji("⚡ System design"),
-    emoji("⚡ Level design & balancing"),
+    emoji("⚡ System design and math sheets"),
+    emoji("⚡ Game flow, wireframing & prototyping"),
     emoji("⚡ Storyboarding & conceptualization"),
     emoji("⚡ User experience and sound design"),
     emoji(
@@ -123,10 +125,12 @@ const workExperiences = {
       company: "Juego Studios",
       companylogo: require("./assets/images/juegoLogo.png"),
       date: "Jun 2019 – Nov 2020",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "In addition to the responsibilities of game design and planning, I also took up mentorship as Lead for junior game designers",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Deep interaction with team leads and members of the Programming, Art, Testing, and Business departments.",
+        "Supervision and responsibility of 3 Junior Game Designers, overseeing their work and facilitating communication between other departments.",
+        "Higher involvement with management and project stakeholders.",
+        "Game design management using tools like JIRA and Redmine."
       ]
     },
     {
@@ -134,14 +138,20 @@ const workExperiences = {
       company: "Juego Studios",
       companylogo: require("./assets/images/juegoLogo.png"),
       date: "Jun 2018 – Jun 2019",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "As a game planner, I created Game Design Documents, wireframes, concept and pitch documents, and worked on balancing and level design. Additionally, I also worked on UI/UX, game audio, and end-user testing. ",
+      descBullets: [
+        "Creation of GDD, math sheets, level design, and storyboards.",
+        "Interactive wireframes and prototypes for game flow and user experience using tools like Adobe XD.",
+        "Game audio design starting from sound lists, to mixing audio using Audacity and FL Studio.",
+        "End-user testing to ensure the game follows the vision."
+      ]
     },
     {
-      role: "Game Producer",
+      role: "Associate Game Producer",
       company: "Juego Studios",
       companylogo: require("./assets/images/juegoLogo.png"),
       date: "Jan 2018 – Jun 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Worked with all departments of the studio to ensure smooth flow of the game development process. Being an internship role, I was able to learn and grow rapidly in a short span of time due to being involved in all the various processes of game development. At the end of the internship, I was transferred to the Game Design department to make best use of my creative and design skills."
     }
   ]
 };
