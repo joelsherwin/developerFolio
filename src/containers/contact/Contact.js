@@ -29,13 +29,25 @@ export default function Contact() {
                 isDark ? "dark-mode contact-text-div" : "contact-text-div"
               }
             >
-              {contactInfo.number && (
+              {contactInfo.number1 && (
                 <>
                   <a
                     className="contact-detail"
-                    href={"tel:" + contactInfo.number}
+                    href={"tel:" + contactInfo.number1}
                   >
-                    {contactInfo.number}
+                    {contactInfo.number1}
+                  </a>
+                  <br />
+                  <br />
+                </>
+              )}
+              {contactInfo.number2 && (
+                <>
+                  <a
+                    className="contact-detail"
+                    href={"tel:" + contactInfo.number2}
+                  >
+                    {contactInfo.number2}
                   </a>
                   <br />
                   <br />

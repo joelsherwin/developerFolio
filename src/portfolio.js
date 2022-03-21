@@ -25,7 +25,7 @@ const greeting = {
     "💼 Actively looking for opportunities."
   ),
   resumeLink:
-    "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Set to empty to hide the button
+    "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -33,7 +33,7 @@ const greeting = {
 
 const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/chrysostom-watson-631a55163/?originalSubdomain=jp",
-  gmail: "chriswatson@gmail.com",
+  gmail: "chrysostom.watson@gmail.com",
   twitter: "https://twitter.com/elementart_",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
@@ -70,26 +70,35 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Bachelor’s Degree in Engineering - Mechatronics",
+      logo: require("./assets/images/mitelogo.png"),
+      subHeader: "Mangalore Institute of Technology and Engineering",
+      duration: "2014-2018",
+      desc: "A four-year bachelor’s program where I studied various branches of mechanical, electronics, and computer engineering. Some relevant subjects were Advanced C Programming, Artificial Intelligence, Computer Graphics, and Ergonomics.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Japanese Language Proficiency Test - N2 ",
+      logo: require("./assets/images/sigmalogo.png"),
+      subHeader: "Seigan Japanese Language School, Osaka",
+      duration: "2021-2022",
+      desc: "Attained within 1.5 years of study"
+    },
+    {
+      schoolName: "Lean Six Sigma - Green Belt ",
+      logo: require("./assets/images/n2logo.png"),
+      subHeader: "Binghamton University - SUNY",
+      duration: "2020",
+      
+      descBullets:[
+        "Certified Green Belt, scored highest at the university in my year.",
+        "Also previously attained the Yellow Belt"
+      ]
     }
   ]
 };
@@ -226,7 +235,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -239,9 +248,9 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Bachelor's Degree in Engineering - Mechatronics",
+      title: "Bachelor's Degree in Engineering - Mechatronics @ Mangalore Institute of Technology & Engineering",
       subtitle:
-        "Mangalore Institute of Technology & Engineering",
+        "A four-year bachelor/’s program where I studied various branches of mechanical, electronics, and computer engineering. Some relevant subjects were Advanced C Programming, Artificial Intelligence, Computer Graphics, and Ergonomics.",
       image: require("./assets/images/mitelogo.png"),
       footerLink: [
         {
@@ -271,7 +280,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -334,8 +343,9 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Come say hi",
-  number: "+92-0000000000",
-  email_address: "chriswatson@gmail.com"
+  number1: "(+81) 070-1409-5834 ",
+  number2: "(+91) 9620113298 ",
+  email_address: "chrysostom.watson@gmail.com"
 };
 
 // Twitter Section
